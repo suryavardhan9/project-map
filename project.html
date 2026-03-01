@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoExplorer | Premium Mapping</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Geo<span>Explorer</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Analysis</a></li>
+            <li><a href="#">Layers</a></li>
+            <li class="btn-primary">Sign In</li>
+        </ul>
+    </nav>
+
+<main class="main-container">
+    <div class="map-controls">
+        <div class="search-wrapper" id="searchWrapper">
+            <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+            <div class="search-content">
+                <input type="text" id="locationInput" placeholder="Search the world...">
+                <button onclick="findLocation()" class="find-btn">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
